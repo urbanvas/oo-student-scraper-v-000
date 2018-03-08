@@ -23,6 +23,7 @@ class Scraper
     doc.css('.social-icon-container').each do |sub|
       # twitter = sub.css('')
       binding.pry
+    end
   end
 
 end
