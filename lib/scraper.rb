@@ -23,6 +23,7 @@ class Scraper
     student = {}
     doc.css('.social-icon-container').each do |sub|
       twitter = sub.css('a').first['href']
+      github = sub.css('a').first
       binding.pry
     end
   end
