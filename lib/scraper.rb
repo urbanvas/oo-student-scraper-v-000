@@ -9,9 +9,11 @@ class Scraper
     arr = []
     doc.css('.roster-cards-container').each do |student|
       student.css('.student-card').each do |sub|
+        binding.pry
         location = sub.css('.student-location').text
         name = sub.css('.student-name').text
         arr << {location: location, name: name}
+
       end
     end
     arr
