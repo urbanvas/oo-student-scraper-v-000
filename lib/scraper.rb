@@ -11,12 +11,8 @@ class Scraper
       student.css('.student-card').each do |sub|
         location = sub.css('.student-location').text
         name = sub.css('.student-name').text
-        binding.pry
-        # name
-        # # Hash.new { |hash, key| hash[key] =  }
-        # hash = {location: ,
-        #         name:
-        #       }
+        arr << {location: location, name: name}
+
       end
     end
     # binding.pry
