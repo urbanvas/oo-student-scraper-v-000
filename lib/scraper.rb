@@ -12,11 +12,9 @@ class Scraper
         location = sub.css('.student-location').text
         name = sub.css('.student-name').text
         arr << {location: location, name: name}
-        arr
-
       end
     end
-    # binding.pry
+    arr
   end
 
   def self.scrape_profile_page(profile_url)
