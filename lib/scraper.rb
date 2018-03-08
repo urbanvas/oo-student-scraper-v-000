@@ -9,7 +9,7 @@ class Scraper
     arr = []
     doc.css('.roster-cards-container').each do |student|
       student.css('.student-card').each do |sub|
-        location
+        location = sub.css('.student-location').text
         name
         # Hash.new { |hash, key| hash[key] =  }
         hash = {location: ,
