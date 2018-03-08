@@ -22,7 +22,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     student = {}
     doc.css('.social-icon-container').each do |sub|
-      # twitter = sub.css('')
+      twitter = sub.css('a').first['href']
       binding.pry
     end
   end
