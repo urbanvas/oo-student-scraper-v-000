@@ -12,6 +12,7 @@ class Scraper
         location = sub.css('.student-location').text
         name = sub.css('.student-name').text
         arr << {location: location, name: name}
+        arr
 
       end
     end
