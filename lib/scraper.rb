@@ -10,11 +10,12 @@ class Scraper
     doc.css('.roster-cards-container').each do |student|
       student.css('.student-card').each do |sub|
         location = sub.css('.student-location').text
-        name
-        # Hash.new { |hash, key| hash[key] =  }
-        hash = {location: ,
-                name:
-              }
+        binding.pry
+        # name
+        # # Hash.new { |hash, key| hash[key] =  }
+        # hash = {location: ,
+        #         name:
+        #       }
       end
     end
     # binding.pry
