@@ -9,10 +9,10 @@ class Scraper
     arr = []
     doc.css('.roster-cards-container').each do |student|
       student.css('.student-card').each do |sub|
-        binding.pry
+        profile = sub.css('a').first['href']
         location = sub.css('.student-location').text
         name = sub.css('.student-name').text
-        arr << {location: location, name: name}
+        arr << {location: location, name: name, profile_url: profile}
 
       end
     end
